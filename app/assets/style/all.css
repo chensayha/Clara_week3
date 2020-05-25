@@ -1,0 +1,351 @@
+body {
+  font-family: "Microsoft JhengHei",sans-serif;
+  font-size: 20px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.header {
+  background-color: #AA0601;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 80px;
+  padding-right: 80px;
+  overflow: hidden;
+}
+
+.header h1 {
+  width: 80px;
+  height: 49px;
+  background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/logo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: block;
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-left: 88px;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 412px;
+}
+
+.nav li a {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: white;
+  text-decoration: none;
+}
+
+.navM {
+  display: none;
+}
+
+.burgerBar {
+  display: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer {
+  background-color: #AA0601;
+  padding-top: 48px;
+  color: white;
+  font-size: 16px;
+}
+
+.footernav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 32px;
+}
+
+.footernav a {
+  color: white;
+}
+
+.footerMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footerMenu li {
+  margin-right: 48px;
+}
+
+.footerIcon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footerIcon li {
+  margin-left: 32px;
+}
+
+.footerContect {
+  border-bottom: 1px solid white;
+  margin-bottom: 24px;
+}
+
+.footerContect .contect {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 18px;
+}
+
+.footerContect .contect .phone {
+  margin-right: 23px;
+}
+
+.footerContect .contect .email {
+  margin-right: 12px;
+}
+
+.footerContect .contect p {
+  font-size: 36px;
+  font-family: "Roboto", sans-serif;
+}
+
+.copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 27px;
+}
+
+.copyright ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.copyright li img {
+  margin-right: 38px;
+}
+
+.copyright .copyrightMenu {
+  width: 188px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 14px;
+}
+
+.copyright .copyrightMenu a {
+  color: white;
+}
+
+
+
+@media (max-width: 992px) {
+  .header h1 {
+    margin-left: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+  .header h1 {
+    width: 48px;
+    height: 30px;
+    margin: 10px;
+  }
+  .footerNav {
+    padding-bottom: 24px;
+  }
+  .footerMenu li {
+    margin-right: 40px;
+  }
+  .footerIcon li {
+    margin-left: 24px;
+    width: 24px;
+  }
+  .footerContect .contect {
+    margin-bottom: 9px;
+  }
+  .footerContect .contect .phone {
+    width: 23px;
+    margin-right: 12px;
+  }
+  .footerContect .contect .email {
+    width: 32px;
+    margin-right: 8px;
+  }
+  .footerContect .contect p {
+    font-size: 20px;
+  }
+  .copyright img {
+    display: none;
+  }
+  .copyrightMenu {
+    width: 150px;
+  }
+  .container {
+    width: 85%;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .header h1 {
+    width: 48px;
+    height: 30px;
+    margin: 10px;
+  }
+  .nav {
+    font-size: 14px;
+  }
+  .footernav {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding-bottom: 0;
+  }
+  .footerMenu {
+    display: none;
+  }
+  .footerContect {
+    margin-top: -20px;
+  }
+  .footerContect .phone {
+    width: 13px;
+    margin-right: 8px;
+  }
+  .footerContect .email {
+    width: 20px;
+    margin-right: 5px;
+  }
+  .footerContect p {
+    font-size: 16px;
+  }
+  .copyright {
+    font-size: 14px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+  }
+  .copyright li {
+    margin-bottom: 8px;
+  }
+  .copyright li img {
+    display: block;
+    position: absolute;
+    bottom: 24px;
+    right: 0;
+    width: 46px;
+    margin-right: 0;
+  }
+  .copyright .copyrightMenu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 375px) {
+  .header {
+    position: relative;
+  }
+  .header h1 {
+    margin: 10px auto;
+  }
+  .nav {
+    display: none;
+  }
+  .navM {
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: -375px;
+    width: 100%;
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+  }
+  .navM li a {
+    text-decoration: none;
+    color: white;
+    background-color: #AA0601;
+    display: block;
+    line-height: 52px;
+    border-bottom: 1px solid white;
+    text-align: center;
+  }
+  .navM.show {
+    left: 0;
+  }
+  .logo {
+    width: 48px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .burgerBar {
+    display: block;
+    position: absolute;
+    left: 16px;
+    top: 13px;
+  }
+}
+/*# sourceMappingURL=all.css.map */

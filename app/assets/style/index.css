@@ -1,0 +1,109 @@
+.banner {
+  position: relative;
+  width: initial;
+  height: 840px;
+  background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.bannerTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: right;
+  color: #650300;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.bannerTitle h2 {
+  font-size: 64px;
+  padding-top: 5px;
+}
+
+.special {
+  background-color: #fbf2f2;
+  padding-top: 64px;
+  padding-bottom: 80px;
+}
+
+h3 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #650300;
+  text-align: center;
+}
+
+.specialList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.specialList li {
+  width: 282px;
+  padding: 16px 37px 24px 37px;
+  text-align: center;
+}
+
+.specialList li img {
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.specialList li h4 {
+  font-size: 24px;
+  color: #650300;
+  padding-bottom: 4px;
+  font-weight: bold;
+}
+
+.specialList li p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@media (max-width: 992px) {
+  .banner {
+    height: 840px;
+    background: url(https://upload.cc/i1/2020/04/25/jH0crS.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .bannerTitle {
+    font-size: 20px;
+  }
+  .bannerTitle h2 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 576px) {
+  .banner {
+    width: initial;
+    height: 394px;
+    background: url(https://upload.cc/i1/2020/04/25/Z0h7q1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .bannerTitle {
+    font-size: 16px;
+  }
+  .bannerTitle h2 {
+    font-size: 32px;
+  }
+}
+/*# sourceMappingURL=index.css.map */
