@@ -1,10 +1,44 @@
----
-title: glasses-看得清，才能看得遠
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
-<!-- banner -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>glasses-看得清，才能看得遠</title>
+  <link rel="stylesheet" href="./assets/style/reset.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <link rel="stylesheet" href="./assets/style/index.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1>
+      <a href="./index.html">看得清，才能看得遠</a>
+    </h1>
+    <nav>
+      <!-- 電腦版選單 -->
+      <ul class="nav">
+        <li><a href="#">系列鏡框</a></li>
+        <li><a href="#">門市據點</a></li>
+        <li><a href="#">部落格</a></li>
+        <li><a href="#">常見問題</a></li>
+      </ul>
+      <!-- 手機版選單 -->
+      <div class="burgerBar">
+        <i class="fas fa-bars"></i>
+      </div>
+  </nav>
+  </header>
+  <ul class="navM">
+    <li><a href="#">系列鏡框</a></li>
+    <li><a href="#">門市據點</a></li>
+    <li><a href="#">部落格</a></li>
+    <li><a href="#">常見問題</a></li>
+  </ul>
+
+  <!-- banner -->
 <section class="banner">
   <div class="container">
     <div class="bannerTitle">
@@ -181,3 +215,56 @@ current: index
   <input class="submit" type="submit" value="確認送出">
   </div>  
 </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footernav">
+        <ul class="footerMenu">
+          <li><a href="#">首頁</a></li>
+          <li><a href="#">系列鏡框</a></li>
+          <li><a href="#">門市據點</a></li>
+          <li><a href="#">部落格</a></li>
+          <li><a href="#">常見問題</a></li>
+        </ul>
+        <ul class="footerIcon">
+          <li>
+            <a href="#"></a><img src="assets/images/icon-fb.svg" alt="">
+          </li>
+          <li>
+            <a href="#"></a><img src="./assets/images/icon-ig.svg" alt="">
+          </li>
+          <li>
+            <a href="#"></a><img src="./assets/images/icon-line.svg" alt="">
+          </li>
+        </ul>
+      </div>
+      <div class="footerContect">
+        <div class="contect">
+          <img class="phone" src="./assets/images/icon-phone.svg" alt="">
+          <p>0800-000-000</p>
+        </div>
+        <div class="contect">
+          <img class="email" src="./assets/images/icon-mail.svg" alt="">
+          <p>glasses@business.com</p>
+        </div>
+      </div>
+      <div class="copyright">
+        <ul>
+          <li>
+            <img src="./assets/images/logo.png" alt="">
+          </li>
+          <li>Copyright © 2020 Glasses.All rights reserved.</li>
+        </ul>
+        <ul class="copyrightMenu">
+          <li><a href=""> 隱私權政策</a></li>
+          <li><a href=""> 服務條款</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+  <script src="\assets\script\all.js"></script>
+</body>
+
+</html>
