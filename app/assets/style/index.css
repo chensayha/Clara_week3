@@ -6,23 +6,20 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-}
-
-.bannerTitle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bannerTitle {
   text-align: right;
   color: #650300;
   font-size: 36px;
   font-weight: bold;
+  width: 1200px;
 }
 
 .bannerTitle h2 {
@@ -33,14 +30,15 @@
 .special {
   background-color: #fbf2f2;
   padding-top: 64px;
-  padding-bottom: 80px;
+  padding-bottom: 40px;
 }
 
 h3 {
   font-size: 48px;
-  font-weight: bold;
+  font-weight: 800;
   color: #650300;
   text-align: center;
+  padding-bottom: 44px;
 }
 
 .specialList {
@@ -49,29 +47,455 @@ h3 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .specialList li {
-  width: 282px;
-  padding: 16px 37px 24px 37px;
+  width: 208px;
   text-align: center;
+  font-weight: bold;
+  padding-bottom: 40px;
 }
 
 .specialList li img {
   margin: 0 auto;
   padding-bottom: 40px;
+  width: 100px;
+  height: 100px;
 }
 
 .specialList li h4 {
   font-size: 24px;
   color: #650300;
   padding-bottom: 4px;
-  font-weight: bold;
+  line-height: 36px;
 }
 
 .specialList li p {
   font-size: 16px;
   line-height: 24px;
+  text-align: left;
+}
+
+.classic {
+  padding-top: 64px;
+}
+
+.classic li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 32px;
+}
+
+.classicImg {
+  width: 60%;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+.classicImg:hover {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+.classicText {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.classicText .icon {
+  width: 48px;
+  padding-right: 8px;
+  padding-left: 24px;
+}
+
+.classicText .icon-diamond {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/9af042262fc422f07175ee3ee88a7d1cf415a0a0/week3/icon-diamond.svg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: initial;
+  height: 48px;
+  padding: 10%;
+}
+
+.classicText .icon-sun {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/9af042262fc422f07175ee3ee88a7d1cf415a0a0/week3/icon-sun.svg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: initial;
+  height: 48px;
+  padding: 10%;
+}
+
+.classicText .icon-thunder {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/9af042262fc422f07175ee3ee88a7d1cf415a0a0/week3/icon-thunder.svg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: initial;
+  height: 48px;
+  padding: 10%;
+}
+
+.classicText span {
+  font-size: 48px;
+  line-height: 72px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+  color: #AA0601;
+  padding-right: 24px;
+}
+
+.row-reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.color-white {
+  color: white;
+}
+
+.design {
+  width: initial;
+  height: initial;
+  background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-top: 64px;
+  padding-bottom: 479px;
+}
+
+.designFlex {
+  max-width: 1539px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 60px;
+}
+
+.designLeft {
+  width: 37.2%;
+  margin-right: 8px;
+}
+
+.designRight {
+  width: 62.8%;
+}
+
+.designRight .RightTopImg {
+  margin-bottom: 8px;
+}
+
+.designRightBtm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.RightBtmL {
+  width: 13.5%;
+  margin-right: 8px;
+}
+
+.rightBtmR {
+  width: 86.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.rightBtmRTop {
+  height: 55%;
+  width: 99.5%;
+  margin-bottom: 8px;
+}
+
+.rightBtmRBtm {
+  width: 100%;
+  height: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.whiteBox {
+  background-color: white;
+  text-align: center;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 2;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 32%;
+  padding-left: 32px;
+  padding-right: 19px;
+}
+
+.whiteBox .fa-arrow-right {
+  font-size: 50px;
+  color: black;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  padding-left: 5px;
+}
+
+.moreBtn {
+  color: #AA0601;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 108px;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.whiteBox:hover .moreBtn {
+  text-shadow: 0 -90px 0 #aa0701dc, 0 -150px 0 #aa070177;
+}
+
+.whiteBox:hover .fa-arrow-right {
+  padding-left: 15px;
+}
+
+.yellowBox {
+  position: absolute;
+  background-color: #f6c600;
+  width: 31.5%;
+  height: 100%;
+  top: 0px;
+  right: 10%;
+  z-index: 1;
+}
+
+.designArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 592px;
+}
+
+.imgDouble {
+  background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-8.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 48.8%;
+}
+
+.imgYouth {
+  background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-9.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 48.8%;
+  height: 100%;
+}
+
+.designArea h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 72px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 100%;
+  color: #AA0601;
+  padding-bottom: 0;
+}
+
+.recTitle {
+  margin-top: -300px;
+}
+
+.recommend {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.recommend li {
+  width: 23.5%;
+}
+
+.recommend .card {
+  border: 1px solid #DEE2E6;
+  padding: 16px;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+.recommend img {
+  width: 100%;
+}
+
+.recommend .cardTitle {
+  font-weight: 600;
+}
+
+.recommend p {
+  line-height: 24px;
+}
+
+.recommend .cardUpdate {
+  color: #707070;
+}
+
+.contact {
+  background-color: #fbf2f2;
+  padding-top: 64px;
+  padding-bottom: 92px;
+}
+
+.contact h3 {
+  color: black;
+}
+
+.contact p {
+  line-height: 30px;
+  padding-bottom: 20px;
+  font-weight: 550;
+}
+
+.contact .submit {
+  width: 180px;
+  height: 54px;
+  display: block;
+  margin: auto;
+  background-color: #AA0601;
+  color: #ffffff;
+  border: 0;
+  margin-top: 42px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  font-weight: bold;
+}
+
+.contact .submit:hover {
+  background-color: #650300;
+}
+
+.contactForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contactForm label {
+  padding-bottom: 4px;
+  font-size: 16px;
+  font-weight: 550;
+  line-height: 24px;
+}
+
+.contactForm .formList {
+  border: 1px solid black;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+  background-color: transparent;
+}
+
+.contactForm textarea {
+  height: 136px;
+}
+
+::-webkit-input-placeholder {
+  color: black;
+  opacity: 20%;
+  font-family: "Microsoft JhengHei",sans-serif;
+}
+
+@media (max-width: 1200px) {
+  .bannerTitle {
+    width: 100%;
+  }
+  .whiteBox {
+    width: 40%;
+  }
+  .whiteBox .fa-arrow-right {
+    font-size: 32px;
+  }
+  .moreBtn {
+    font-size: 55px;
+    line-height: 77px;
+  }
+  .yellowBox {
+    width: 43%;
+  }
+  .imgDouble {
+    height: 70%;
+  }
+  .imgYouth {
+    height: 70%;
+  }
+  .designArea h3 {
+    font-size: 60px;
+  }
+  .recommend li {
+    width: 24%;
+  }
 }
 
 @media (max-width: 992px) {
@@ -87,6 +511,109 @@ h3 {
   }
   .bannerTitle h2 {
     font-size: 48px;
+  }
+  h3 {
+    font-size: 32px;
+    padding-bottom: 32px;
+  }
+  .specialList {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .specialList li {
+    width: 224px;
+  }
+  .specialList li img {
+    padding-bottom: 16px;
+  }
+  .specialList li h4 {
+    font-size: 20px;
+    padding-bottom: 8px;
+    line-height: 30px;
+  }
+  .classic {
+    padding-top: 40px;
+  }
+  .classic li {
+    padding-bottom: 8px;
+  }
+  .classicText {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .classicText .icon {
+    width: 32px;
+  }
+  .classicText .icon-diamond {
+    background-size: contain;
+    width: initial;
+    height: 32px;
+    padding: 7%;
+  }
+  .classicText .icon-sun {
+    background-size: contain;
+    width: initial;
+    height: 32px;
+    padding: 7%;
+  }
+  .classicText .icon-thunder {
+    background-size: contain;
+    width: initial;
+    height: 32px;
+    padding: 7%;
+  }
+  .classicText span {
+    font-size: 28px;
+    line-height: 42px;
+    padding-right: 0;
+  }
+  .row-reverse {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .moreBtn {
+    font-size: 40px;
+    line-height: 65px;
+  }
+  .whiteBox {
+    padding: 0 5px;
+  }
+  .whiteBox .fa-arrow-right {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .design {
+    padding-bottom: 40px;
+  }
+  .imgDouble {
+    width: 49.8%;
+    height: 47%;
+  }
+  .imgYouth {
+    width: 49.8%;
+    height: 47%;
+  }
+  .designArea h3 {
+    font-size: 32px;
+  }
+  .recommend li {
+    width: 48.3%;
+    margin-bottom: 24px;
+  }
+  .contact .submit {
+    width: 136px;
+    height: 36px;
   }
 }
 
@@ -104,6 +631,138 @@ h3 {
   }
   .bannerTitle h2 {
     font-size: 32px;
+  }
+  h3 {
+    font-size: 24px;
+    line-height: 48px;
+    padding-bottom: 16px;
+  }
+  .specialList li img {
+    width: 80px;
+    height: 80px;
+  }
+  .classic {
+    padding-top: 24px;
+  }
+  .classic li {
+    position: relative;
+  }
+  .classicImg {
+    width: 100%;
+  }
+  .classicText {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 27%;
+  }
+  .classicText .icon-diamond {
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/9af042262fc422f07175ee3ee88a7d1cf415a0a0/week3/icon-diamond-white.svg);
+    padding: 4%;
+  }
+  .classicText .icon-sun {
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/9af042262fc422f07175ee3ee88a7d1cf415a0a0/week3/icon-sun-white.svg);
+    padding: 4%;
+  }
+  .classicText .icon-thunder {
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/9af042262fc422f07175ee3ee88a7d1cf415a0a0/week3/icon-thunder-white.svg);
+    padding: 4%;
+  }
+  .classicText span {
+    color: white;
+  }
+  .design {
+    padding-bottom: 189px;
+  }
+  .designFlex {
+    margin-left: 24px;
+    margin-right: 24px;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  .designLeft {
+    margin-right: 1px;
+    width: 48%;
+  }
+  .designRight {
+    width: 52%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .designRight .RightTopImg {
+    margin-bottom: 1px;
+  }
+  .RightBtmL {
+    margin-right: 1px;
+    width: 20.5%;
+  }
+  .designRightBtm {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    position: relative;
+  }
+  .rightBtmR {
+    width: 100%;
+  }
+  .RightBtmL {
+    position: absolute;
+    height: 62%;
+    width: 21%;
+  }
+  .rightBtmRTop {
+    margin-bottom: 1px;
+  }
+  .rightBtmRBtm {
+    width: 78%;
+    margin-top: 32px;
+  }
+  .moreBtn {
+    font-size: 26px;
+    line-height: 41px;
+  }
+  .whiteBox {
+    padding: 0 5px;
+    margin-left: 8px;
+    width: 80%;
+  }
+  .whiteBox .fa-arrow-right {
+    font-size: 22px;
+  }
+  .yellowBox {
+    left: 0;
+    height: 128%;
+    top: initial;
+    width: 80%;
+  }
+  .imgDouble {
+    width: 100%;
+    height: 48%;
+  }
+  .imgYouth {
+    width: 100%;
+    height: 48%;
+  }
+  .designArea h3 {
+    font-size: 43px;
+  }
+  .recTitle {
+    margin-top: -184px;
+  }
+  .recommend li {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .contact p {
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 /*# sourceMappingURL=index.css.map */

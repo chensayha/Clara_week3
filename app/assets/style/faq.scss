@@ -1,0 +1,22 @@
+@import  "_setting.scss";
+
+
+
+.faqBanner{
+    background: url(../images/faq.png);
+    background-repeat: no-repeat;
+    height: 263px;
+    background-size: cover;
+    background-position: center center;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+h2{
+    font-size: 64px;
+    font-weight: 550;
+    width:1200px;
+    padding-bottom: 10px;
+}

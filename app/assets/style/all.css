@@ -22,21 +22,6 @@ img {
           align-items: center;
   padding-left: 80px;
   padding-right: 80px;
-  overflow: hidden;
-}
-
-.header h1 {
-  width: 80px;
-  height: 49px;
-  background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/logo.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  display: block;
-  text-indent: 101%;
-  white-space: nowrap;
-  overflow: hidden;
-  margin-left: 88px;
 }
 
 .nav {
@@ -183,11 +168,30 @@ img {
   color: white;
 }
 
+.mb-1 {
+  margin-bottom: 16px;
+}
 
+.smContainer {
+  width: 41.6%;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+  .smContainer {
+    width: 60%;
+  }
+}
 
 @media (max-width: 992px) {
   .header h1 {
     margin-left: 48px;
+  }
+  .smContainer {
+    width: 70%;
   }
 }
 
@@ -232,7 +236,10 @@ img {
     width: 150px;
   }
   .container {
-    width: 85%;
+    max-width: 672px;
+  }
+  .smContainer {
+    width: 66.1%;
   }
 }
 
@@ -303,6 +310,9 @@ img {
   .container {
     width: 90%;
   }
+  .smContainer {
+    width: 90%;
+  }
 }
 
 @media (max-width: 375px) {
@@ -316,11 +326,11 @@ img {
     display: none;
   }
   .navM {
-    display: block;
-    position: absolute;
-    top: 50px;
-    left: -375px;
+    display: initial;
     width: 100%;
+    position: absolute;
+    z-index: 99;
+    left: -375px;
     -webkit-transition-duration: 0.5s;
             transition-duration: 0.5s;
   }
