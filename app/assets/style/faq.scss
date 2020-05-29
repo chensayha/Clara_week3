@@ -5,18 +5,64 @@
 .faqBanner{
     background: url(../images/faq.png);
     background-repeat: no-repeat;
-    height: 263px;
+    height: 304px;
     background-size: cover;
     background-position: center center;
     display:flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    margin-bottom: 40px;
+    margin-bottom: 88px;
+    h2{
+        font-size: 64px;
+        line-height:80px;
+        font-weight: 550;
+        width:1200px;
+        display:flex;
+    }
+    img{
+        width: 57.9px;
+        padding-left: 10px;
+    }
 }
-h2{
-    font-size: 64px;
-    font-weight: 550;
-    width:1200px;
-    padding-bottom: 10px;
+
+.faqQuestion{
+    h3{
+        font-size: 32px;
+        line-height: 63px;
+        font-weight: 600;
+        color: black;
+        text-align: left;
+        padding-bottom: 16px;
+    }
+    ul{
+        border: 1px solid black;
+        border-bottom: none;
+        margin-bottom: 156px;
+    }
+    .question{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 23px;
+        padding: 22px 38px;
+        border-bottom: 1px solid black;
+        display:flex;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+    .answer{
+        background-color: $color_gray;
+        border-bottom: 1px solid black;
+        display: none;
+        p{
+            padding: 22px 38px;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+    .answer.active{
+            display: block;
+    }
+
 }
+
