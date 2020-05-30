@@ -1,8 +1,8 @@
 $(document).ready(function() {
     $(function () { 
         $('.faqList').click(function () { 
-            $('.faqList').children('.answer').removeClass('active');
-            $(this).children('.answer').toggleClass('active');
+            $('.answer').removeClass('active');
+            $(this).children('.answer').slideToggle().addClass('active');
         }); 
     });
   });
