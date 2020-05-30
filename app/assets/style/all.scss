@@ -165,7 +165,7 @@ img{
 //992px以下畫面
 @media (max-width:992px){
 
-  .header h1 {
+  .header a {
     margin-left: 48px;
   }
   .smContainer{
@@ -182,7 +182,7 @@ img{
     padding-right: 48px;
   }
 
-  .header h1 {
+  .header a {
     width: 48px;
     height: 30px;
     margin: 10px;
@@ -254,7 +254,7 @@ img{
   .header{ 
     padding-left: 0;
     padding-right: 0;
-    h1 {
+    a {
       width: 48px;
       height: 30px;
       margin: 10px;
@@ -332,9 +332,9 @@ img{
 //375px以下畫面
 @media (max-width:375px){
   .header{
-    
+    height: 50px;
     position: relative;
-     h1{
+     a{
         margin:10px auto;
       }
   }
