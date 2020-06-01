@@ -1,9 +1,6 @@
-$(document).ready(function() {
-    $(function () { 
-        $('.faqList').click(function () { 
-            $('.answer').removeClass('active');
-            $(this).children('.answer').slideToggle().addClass('active');
-        }); 
-    });
-  });
-
+$(function () { 
+    $('.faqList').click(function () { 
+        $('.answer').removeClass('active').slideUp();
+        $(this).children('.answer').addClass('active').slideDown();
+    }); 
+});

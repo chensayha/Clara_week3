@@ -17,8 +17,9 @@
         font-size: 64px;
         line-height:80px;
         font-weight: 550;
-        width:1200px;
+        width: 100%;
         display:flex;
+
     }
     img{
         width: 57.9px;
@@ -66,3 +67,47 @@
 
 }
 
+
+
+//992px以下畫面
+@media (max-width:992px){
+    .faqBanner{
+        h2{
+            font-size: 48px;
+
+        }
+        img{
+            width: 48px;
+            padding-left: 16px;
+        }
+    }
+}
+
+//576px以下畫面
+@media (max-width:576px){
+    .faqBanner{
+        margin-bottom: 24px;
+        height: 143px;
+        h2{
+            font-size: 28px;
+            line-height:40px;
+            width: 90%;
+        }
+        img{
+
+            width: 24px;
+            padding-left: 8px;
+        }
+    }
+    .faqQuestion{
+        h3{
+            font-size: 20px;
+        }
+        .question{
+            font-size: 16px;
+        }
+        .answer p{
+            font-size: 14px;
+        }
+    }
+}
